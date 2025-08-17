@@ -1,8 +1,8 @@
 package GUI;
 
 public class player {
-    public static final int WIDTH = 10;   // ancho de la paleta
-    public static final int HEIGHT = 79;  // alto de la paleta
+    public static final int WIDTH = 84;   // ancho de la paleta
+    public static final int HEIGHT = 16;  // alto de la paleta
     private int x;  
     private int y;  
     private final int speed = 7; // Velocidad de movimiento
