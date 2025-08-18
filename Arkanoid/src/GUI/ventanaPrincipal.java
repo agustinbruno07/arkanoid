@@ -35,7 +35,7 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
 	
 	public ventanaPrincipal() {
 	    
-		Color[] colores = { Color.GREEN, Color.BLUE, Color.RED, Color.YELLOW };
+		Color[] colores = { Color.GREEN, Color.BLUE, Color.RED, Color.YELLOW }; //hago un array con los colores posibles
 		Random random = new Random();
 	    getContentPane().setLayout(null);
 	    setTitle("Arkanoid");
@@ -68,10 +68,11 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
 	    pelota.setBackground(Color.WHITE); 
 	    pelota.setBounds(326, 600, 10, 10);
 	    contentPane.add(pelota);
-	    
+
+		//indico una posicion fija para cada bloque y genero sus colores aleatoriamente
 	    JButton pos1 = new JButton("");
 	    pos1.setBounds(64, 79, 111, 39);
-	    pos1.setBackground(colores[random.nextInt(colores.length)]);
+	    pos1.setBackground(colores[random.nextInt(colores.length)]); //toma una posicion del array hecho para setear el color
 	    contentPane.add(pos1);
 	    
 	    JButton pos2 = new JButton("");
@@ -226,3 +227,4 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
     @Override
     public void keyTyped(KeyEvent e) {}
 }
+
