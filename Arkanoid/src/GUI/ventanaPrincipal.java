@@ -17,6 +17,8 @@ import java.awt.Graphics;
 import java.awt.Image;
 import javax.swing.JButton;
 
+import java.util.Random;
+
 public class ventanaPrincipal extends JFrame implements KeyListener {
 
 	private static final long serialVersionUID = 1L;
@@ -33,6 +35,8 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
 	
 	public ventanaPrincipal() {
 	    
+		Color[] colores = { Color.GREEN, Color.BLUE, Color.RED, Color.YELLOW };
+		Random random = new Random();
 	    getContentPane().setLayout(null);
 	    setTitle("Arkanoid");
 	    setSize(700,700);
@@ -65,95 +69,80 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
 	    pelota.setBounds(326, 600, 10, 10);
 	    contentPane.add(pelota);
 	    
-	    JButton B_VERDE = new JButton("");
-	    B_VERDE.setBackground(Color.GREEN);
-	    B_VERDE.setForeground(Color.GREEN);
-	    B_VERDE.setBounds(64, 79, 111, 39);
-	    contentPane.add(B_VERDE);
+	    JButton pos1 = new JButton("");
+	    pos1.setBounds(64, 79, 111, 39);
+	    pos1.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos1);
 	    
-	    JButton B_AMARILLO_1 = new JButton("");
-	    B_AMARILLO_1.setBackground(Color.YELLOW);
-	    B_AMARILLO_1.setForeground(Color.YELLOW);
-	    B_AMARILLO_1.setBounds(174, 79, 111, 39);
-	    contentPane.add(B_AMARILLO_1);
+	    JButton pos2 = new JButton("");
+	    pos2.setBounds(174, 79, 111, 39);
+	    pos2.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos2);
 	    
-	    JButton B_AZUL_2 = new JButton("");
-	    B_AZUL_2.setBackground(Color.BLUE);
-	    B_AZUL_2.setForeground(Color.BLUE);
-	    B_AZUL_2.setBounds(283, 79, 111, 39);
-	    contentPane.add(B_AZUL_2);
+	    JButton pos3 = new JButton("");
+	    pos3.setBounds(283, 79, 111, 39);
+	    pos3.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos3);
 	    
-	    JButton B_ROJO_3 = new JButton("");
-	    B_ROJO_3.setBackground(Color.RED);
-	    B_ROJO_3.setForeground(Color.RED);
-	    B_ROJO_3.setBounds(64, 41, 111, 39);
-	    contentPane.add(B_ROJO_3);
+	    JButton pos4 = new JButton("");
+	    pos4.setBounds(64, 41, 111, 39);
+	    pos4.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos4);
 	    
-	    JButton B_VERDE_4 = new JButton("");
-	    B_VERDE_4.setBackground(Color.GREEN);
-	    B_VERDE_4.setForeground(Color.GREEN);
-	    B_VERDE_4.setBounds(174, 41, 111, 39);
-	    contentPane.add(B_VERDE_4);
+	    JButton pos5 = new JButton("");
+	    pos5.setBounds(174, 41, 111, 39);
+	    pos5.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos5);
 	    
-	    JButton B_VERDE_5 = new JButton("");
-	    B_VERDE_5.setBackground(Color.GREEN);
-	    B_VERDE_5.setForeground(Color.GREEN);
-	    B_VERDE_5.setBounds(283, 41, 111, 39);
-	    contentPane.add(B_VERDE_5);
+	    JButton pos6 = new JButton("");
+	    pos6.setBounds(283, 41, 111, 39);
+	    pos6.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos6);
 	    
-	    JButton B_AMARILLO_6 = new JButton("");
-	    B_AMARILLO_6.setBackground(Color.YELLOW);
-	    B_AMARILLO_6.setForeground(Color.YELLOW);
-	    B_AMARILLO_6.setBounds(394, 41, 111, 39);
-	    contentPane.add(B_AMARILLO_6);
+	    JButton pos7 = new JButton("");
+	    pos7.setBounds(394, 41, 111, 39);
+	    pos7.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos7);
 	    
-	    JButton B_AMARILLO_7 = new JButton("");
-	    B_AMARILLO_7.setBackground(Color.YELLOW);
-	    B_AMARILLO_7.setForeground(Color.YELLOW);
-	    B_AMARILLO_7.setBounds(394, 79, 111, 39);
-	    contentPane.add(B_AMARILLO_7);
+	    JButton pos8 = new JButton("");
+	    pos8.setBounds(394, 79, 111, 39);
+	    pos8.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos8);
 	    
-	    JButton B_ROJO_8 = new JButton("");
-	    B_ROJO_8.setBackground(Color.RED);
-	    B_ROJO_8.setForeground(Color.RED);
-	    B_ROJO_8.setBounds(505, 41, 111, 39);
-	    contentPane.add(B_ROJO_8);
+	    JButton pos9 = new JButton("");
+	    pos9.setBounds(505, 41, 111, 39);
+	    pos9.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos9);
 	    
-	    JButton B_ROJO_9 = new JButton("");
-	    B_ROJO_9.setBackground(Color.RED);
-	    B_ROJO_9.setForeground(Color.RED);
-	    B_ROJO_9.setBounds(505, 79, 111, 39);
-	    contentPane.add(B_ROJO_9);
+	    JButton pos10 = new JButton("");
+	    pos10.setBounds(505, 79, 111, 39);
+	    pos10.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos10);
 	    
-	    JButton B_VERDE_10 = new JButton("");
-	    B_VERDE_10.setBackground(Color.GREEN);
-	    B_VERDE_10.setForeground(Color.GREEN);
-	    B_VERDE_10.setBounds(64, 117, 111, 39);
-	    contentPane.add(B_VERDE_10);
+	    JButton pos11 = new JButton("");
+	    pos11.setBounds(64, 117, 111, 39);
+	    pos11.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos11);
 	    
-	    JButton B_AMARILLO_11 = new JButton("");
-	    B_AMARILLO_11.setBackground(Color.YELLOW);
-	    B_AMARILLO_11.setForeground(Color.YELLOW);
-	    B_AMARILLO_11.setBounds(174, 117, 111, 39);
-	    contentPane.add(B_AMARILLO_11);
+	    JButton pos12 = new JButton("");
+	    pos12.setBounds(174, 117, 111, 39);
+	    pos12.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos12);
 	    
-	    JButton B_VERDE_12 = new JButton("");
-	    B_VERDE_12.setBackground(Color.GREEN);
-	    B_VERDE_12.setForeground(Color.GREEN);
-	    B_VERDE_12.setBounds(283, 117, 111, 39);
-	    contentPane.add(B_VERDE_12);
+	    JButton pos13 = new JButton("");
+	    pos13.setBounds(283, 117, 111, 39);
+	    pos13.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos13);
 	    
-	    JButton B_AZUL_13 = new JButton("");
-	    B_AZUL_13.setBackground(Color.BLUE);
-	    B_AZUL_13.setForeground(Color.BLUE);
-	    B_AZUL_13.setBounds(394, 117, 111, 39);
-	    contentPane.add(B_AZUL_13);
+	    JButton pos14 = new JButton("");
+	    pos14.setBounds(394, 117, 111, 39);
+	    pos14.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos14);
 	    
-	    JButton B_ROJO_14 = new JButton("");
-	    B_ROJO_14.setBackground(Color.RED);
-	    B_ROJO_14.setForeground(Color.RED);
-	    B_ROJO_14.setBounds(505, 117, 111, 39);
-	    contentPane.add(B_ROJO_14);
+	    JButton pos15 = new JButton("");
+	    pos15.setBounds(505, 117, 111, 39);
+	    pos15.setBackground(colores[random.nextInt(colores.length)]);
+	    contentPane.add(pos15);
 
 	    addKeyListener(this);
 	    setFocusable(true);
