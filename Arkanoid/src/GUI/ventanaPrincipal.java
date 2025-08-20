@@ -46,7 +46,7 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
     public ventanaPrincipal() {
         pelotas = new ArrayList<>();
         velocidades = new ArrayList<>();
-        colisionesBotones = new HashMap<>();
+        colisionesBotones = new HashMap<>(); //mapa para rastrear colisiones
         nivelActual = 1; // Iniciar en el nivel 1
         puntaje = 0; // Puntaje inicial
 
@@ -178,7 +178,7 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
     }
 
     public void verificarColisiones() {
-        Set<JPanel> pelotasProcesadas = new HashSet<>(); // Registro de pelotas procesadas en este ciclo
+        Set<JPanel> pelotasProcesadas = new HashSet<>(); //evita que una misma pelota destruya varios bloques
 
         for (int i = 0; i < pelotas.size(); i++) {
             JPanel pelota = pelotas.get(i);
@@ -387,4 +387,5 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
         }
     }
     }
+
 }
