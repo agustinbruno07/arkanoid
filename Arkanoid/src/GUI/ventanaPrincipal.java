@@ -74,7 +74,7 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
         setContentPane(contentPane);
 
         Paleta = new JPanel();
-        Paleta.setBackground(Color.BLACK);
+        Paleta.setBackground(Color.CYAN);
         Paleta.setBounds(291, 621, 84, 16);
         contentPane.add(Paleta);
         Paleta.setFocusable(false);
@@ -389,3 +389,4 @@ public class ventanaPrincipal extends JFrame implements KeyListener {
     }
 
 }
+
